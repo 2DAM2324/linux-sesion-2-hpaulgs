@@ -1,0 +1,9 @@
+a) Se usa el comando (man chmod | tail -n 17) > ejercicio1
+
+b) Se usa el comando pwd >> ejercicio1
+
+c) Se usa el comando (who;ls) > ejercicio3
+
+d) Se usa el comando wc -l -w -m ejercicio3 >> ejercicio1 || echo "error" >> ejercicio3
+
+e) Se usa el comando chmod ugo-r,ugo+x ejercicio1 ejercicio3
