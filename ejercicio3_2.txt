@@ -1,0 +1,2 @@
+- Se usa el comando ls .. -l | tail -6
+- Se usa el comando wc -m [ef]*

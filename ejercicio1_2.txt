@@ -1,0 +1,53 @@
+- Dar permiso de ejecución al "resto de usuarios"
+
+	-rw-rw-r-- 1 paulgs paulgs   201 oct 23 12:35 ejercicio1
+	paulgs@paulgs-VirtualBox:~/Escritorio/ejercicios$ chmod o+x ejercicio1
+	-rw-rw-r-x 1 paulgs paulgs   201 oct 23 12:35 ejercicio1
+	Usamos el comando chmod o+x para dar permisos de ejecución al resto de usuarios.
+
+- Dar permiso de escritura y ejecución al grupo
+
+	-rw-rw-r-- 1 paulgs paulgs   170 oct 23 12:54 ejercicio2.txt
+	paulgs@paulgs-VirtualBox:~/Escritorio/ejercicios$ chmod g+wx ejercicio2.txt
+	-rw-rwxr-- 1 paulgs paulgs   170 oct 23 12:54 ejercicio2.txt
+	Usamos el comando chmod g+wx ejercicio2.txt
+
+- Quitar el permiso de lectura al grupo y resto de usuarios
+
+	-rw-rwxr-- 1 paulgs paulgs   170 oct 23 12:54 ejercicio2.txt
+	paulgs@paulgs-VirtualBox:~/Escritorio/ejercicios$ chmod go-r ejercicio2.txt
+	-rw--wx--- 1 paulgs paulgs   170 oct 23 12:54 ejercicio2.txt
+	Usamos el comando chmos go-r
+
+- Dar permiso de ejecución al propietario y permiso de escritura al resto de usuarios 
+
+	-rw-rw-r-- 1 paulgs paulgs   511 oct 23 13:02 ejercicio3.txt
+	paulgs@paulgs-VirtualBox:~/Escritorio/ejercicios$ chmod u+x,o+w ejercicio3.txt
+	paulgs@paulgs-VirtualBox:~/Escritorio/ejercicios$ chmod u+x,o+w ejercicio3.txt
+	Usamos el comando chmod u+x,o+w 
+
+- Dar permiso de ejecución al grupo de todos los archivos cuyo nombre comience con la letra e.
+
+-rw-rw-r-x 1 paulgs paulgs   201 oct 23 12:35 ejercicio1
+-rw--wx--- 1 paulgs paulgs   170 oct 23 12:54 ejercicio2.txt
+-rwxrw-rw- 1 paulgs paulgs   511 oct 23 13:02 ejercicio3.txt
+-rw-rw-r-- 1 paulgs paulgs  3973 oct 23 20:40 ejercicio4.txt
+-rw-rw-r-- 1 paulgs paulgs 15909 oct 23 21:02 ejercicio5.txt
+-rw-rw-r-- 1 paulgs paulgs   431 oct 23 21:10 ejercicio6.txt
+-rw-rw-r-- 1 paulgs paulgs  1057 oct 23 21:21 ejercicio7.txt
+-rw-rw-r-- 1 paulgs paulgs   498 oct 23 21:39 ejercicio8.txt
+-rw-rw-r-- 1 paulgs paulgs 23250 oct 23 21:49 ejercicio9.txt
+
+paulgs@paulgs-VirtualBox:~/Escritorio/ejercicios$ chmod g+x e*
+
+-rw-rwxr-x 1 paulgs paulgs   201 oct 23 12:35 ejercicio1
+-rw--wx--- 1 paulgs paulgs   170 oct 23 12:54 ejercicio2.txt
+-rwxrwxrw- 1 paulgs paulgs   511 oct 23 13:02 ejercicio3.txt
+-rw-rwxr-- 1 paulgs paulgs  3973 oct 23 20:40 ejercicio4.txt
+-rw-rwxr-- 1 paulgs paulgs 15909 oct 23 21:02 ejercicio5.txt
+-rw-rwxr-- 1 paulgs paulgs   431 oct 23 21:10 ejercicio6.txt
+-rw-rwxr-- 1 paulgs paulgs  1057 oct 23 21:21 ejercicio7.txt
+-rw-rwxr-- 1 paulgs paulgs   498 oct 23 21:39 ejercicio8.txt
+-rw-rwxr-- 1 paulgs paulgs 23250 oct 23 21:49 ejercicio9.txt
+
+Usamos el comando chmos g+x e*
