@@ -1,0 +1,3 @@
+- Se usa el comando ls .. > ej31.txt
+- Se usa el comando tail -n 2 ej31.txt > ej32.txt
+- Se usa el comando cat ej31.txt >> ej32.txt
